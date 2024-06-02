@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles.css">
+    <title>Submit Recipe</title>
+</head>
+    <header class="site-header alt">
+        <nav id="site-navigation" class="main-navigation">
+            <div class="site-menu">
+                <div class="menu-left">
+                    <div class="site-logo">
+                        <a href="https://logoipsum.com" rel="home">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="menu-right">
+                    <ul id="desktop-menu" class="desktop-menu">
+                        <li id="menu-item-1" class="menu-item">
+                            <a href="https://www.ghirardelli.com/recipes/classic-chocolate-chip-cookies-rec1016" target="_blank">
+                                <i class="menu-icon icon-cookies"></i>
+                                Cookies
+                            </a>
+                        </li>
+                        <li id="menu-item-2" class="menu-item">
+                            <a href="https://www.kingarthurbaking.com/recipes/extra-tangy-sourdough-bread-recipe" target="_blank">
+                                <i class="menu-icon icon-breads"></i>
+                                Breads
+                            </a>
+                        </li>
+                        <li id="menu-item-3" class="menu-item">
+                            <a href="https://www.foodnetwork.com/recipes/southern-red-velvet-cake-recipe-2011892" target="_blank">
+                                <i class="menu-icon icon-cakes"></i>
+                                Cakes
+                            </a>
+                        </li>
+                        <li id="menu-item-4" class="menu-item">
+                            <a href="./recipe.html" target="_blank">
+                                <i class="menu-icon icon-recipe"></i>
+                                Recipes
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="search-toggle search-icon" aria-label="search-toggle">
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<body>
+    <div class="hero-submit"></div>
+    <div class="content-sidebar-wrap">
+        <h1>Submit a Recipe</h1>
+    </div>
+        <main>
+            <div class="body-container">
+                <section>
+                    
+                    <form onSubmit="handlesubmit">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="e.g. Macarons" required>
+                        <div role="alert" aria-live="assertive"></div>
+
+                        <label for="ingredients-entry">Ingredients</label>
+                        <textarea type="text" id="ingredients-entry" class="long-input" name="ingredients-entry" required></textarea>
+                        <label for="recipe">Recipe</label>
+                        <textarea type="text" id="recipe" name="recipe" class="longer-input"></textarea>
+                        <br>
+                        <button type="submit" class="button-icon">Submit</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div id="footer-content">
+                <ul>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                    <li>Locations</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <nav>
+                    <p> &copy; Copyright 2024 Spencer Kim Inc.</p>
+                </nav>
+            </div>
+        </footer>
+</body>
+
+</html>
